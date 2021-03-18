@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/back_color">
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="300dp"
+        android:layout_height="156dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Enter the text here"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:elevation="0dp"
+        android:paddingHorizontal="30dp"
+        android:text="Play"
+        android:background="@drawable/play_bt"/>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="65dp"
+       >
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="pitch"
+            android:textSize="30dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="50"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="63dp"
+      >
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="speed"
+            android:textSize="30dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarspeed"
+            android:layout_width="244dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="50" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
